@@ -20,9 +20,9 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
     <link rel="icon" type="image/png" href="images/resume.jpg">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/api/css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/api/css/cv.css">
+    <link rel="stylesheet" href="./css/cv.css">
     <link rel="stylesheet" href="lightbox2-2.11.4/dist/css/lightbox.min.css">
 
     <!-- Scripts -->
