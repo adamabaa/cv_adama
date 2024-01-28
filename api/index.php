@@ -9,8 +9,7 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-        content="Cv Adama BA, développeur autodidacte passionné par la création d'applications web. Compétences solides en développement front-end et back-end, ainsi qu'en gestion de bases de données. Capable de travailler de manière autonome, d'apprendre rapidement et de résoudre des problèmes de manière efficace. À la recherche d'opportunités pour développer et mettre en pratique mes compétences en tant que développeur full-stack.">
+    <meta name="description" content="Cv Adama BA, développeur autodidacte passionné par la création d'applications web. Compétences solides en développement front-end et back-end, ainsi qu'en gestion de bases de données. Capable de travailler de manière autonome, d'apprendre rapidement et de résoudre des problèmes de manière efficace. À la recherche d'opportunités pour développer et mettre en pratique mes compétences en tant que développeur full-stack.">
     <meta name="robots" content="index, follow">
     <meta name="color-scheme" content="dark" />
     <meta name="author" content="Adama BA">
@@ -20,19 +19,23 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
     <link rel="icon" type="image/png" href="images/resume.jpg">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/cv.css">
-    <link rel="stylesheet" href="lightbox2-2.11.4/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/cv.css">
 
     <!-- Scripts -->
-    <script src="js/jquery-3.7.1.min.js" defer></script>
-    <script src="js/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
     <script src="js/sizeTxt.js" defer></script>
     <script src="js/changeColor.js" defer></script>
-    <script src="js/gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/font-awesome@6.0.0-beta3/js/all.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js" defer></script>
+    <script src="js/gallery.js" defer></script>
     <script src="js/scrollUp.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -46,10 +49,11 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
         <header class="text-center fixed-top p-2 bg-light w-100">
             <h1>Adama BA</h1>
             <p id="position">Développeur web Full-stack </p>
-            <div class="d-flex justify-content-end">
-                <i id="toggleMode" class="fas fa-adjust fs-4 text-primary cursor-pointer"
-                    aria-label="Changer le mode"></i>
-            </div>
+          <div class="d-flex justify-content-end">
+        <button id="toggleMode" class="btn btn-light" aria-label="Changer le mode">
+            <i class="fas fa-adjust fs-4 text-primary"></i>
+        </button>
+    </div>
         </header>
 
         <section class="mb-5 p-3 border border-primary mt-4">
@@ -263,12 +267,8 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
         </button>
     </div>
 
-    <!-- Scripts regroupés à la fin -->
-    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" defer></script>
-    <script src="lightbox2-2.11.4/dist/js/lightbox.min.js" defer></script>
-    <script src="lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js" defer></script>
-    <!-- Vos autres scripts -->
 </body>
 
 </html>
