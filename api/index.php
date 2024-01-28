@@ -18,24 +18,27 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
     <title>CV de Adama BA</title>
     <link rel="icon" type="image/png" href="images/resume.jpg">
 
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/cv.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/cv.css">
+
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
-    <script src="js/sizeTxt.js" defer></script>
-    <script src="js/changeColor.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/font-awesome@6.0.0-beta3/js/all.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js" defer></script>
+    <script src="js/sizeTxt.js" defer></script>
+    <script src="js/changeColor.js" defer></script>
     <script src="js/gallery.js" defer></script>
     <script src="js/scrollUp.js" defer></script>
     <script src="js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -61,7 +64,7 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
             <div class="summary row align-items-center">
                 <!-- ... (contenu de la première section) -->
                 <div class="col-md-3 col-sm-12 text-center mb-3">
-                    <img src="images/adama.jpg" width="80px" alt="" class="img-fluid img-thumbnail mt-3 ">
+                    <img src="images/adama.jpg" width="80px" alt="" class="img-fluid img-thumbnail mt-3">
                 </div>
                 <p class="content">
                     En tant que développeur web Full-stack passionné, je cherche à contribuer activement au
