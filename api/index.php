@@ -21,7 +21,7 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.cssN">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="lightbox2-2.11.4/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="css/cv.css">
 
@@ -30,7 +30,7 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
     <script src="js/jquery-3.7.1.min.js" defer></script>
     <script src="js/sizeTxt.js" defer></script>
     <script src="js/changeColor.js" defer></script>
-    <script src="/js/gallery.js" ></script>
+    <script src="js/gallery.js"></script>
     <script src="js/scrollUp.js" defer></script>
     <script src="js/script.js" defer></script>
 </head>
