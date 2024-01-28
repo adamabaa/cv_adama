@@ -1,11 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "/api/**", "use": "@vercel/php" },
+    { "src": "/api/**", "use": "@vercel/static-build" },
     { "src": "/images/**", "use": "@vercel/static" },
     { "src": "/js/**", "use": "@vercel/static" },
     { "src": "/css/**", "use": "@vercel/static" },
-    { "src": "/(.*)", "use": "@vercel/php" }
+    { "src": "/(.*)", "use": "@vercel/static-build" }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
