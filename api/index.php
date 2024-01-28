@@ -21,7 +21,7 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="...">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.cssN">
     <link rel="stylesheet" href="lightbox2-2.11.4/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="css/cv.css">
 
