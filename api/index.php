@@ -56,12 +56,12 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
     </div>
         </header>
 
-        <section class="mb-5 p-3 border border-primary mt-4">
+        <section class="mt-5 p-3 border border-primary">
             <h2><i class="fas fa-user"></i>Résumé professionnel</h2>
             <div class="summary row align-items-center">
                 <!-- ... (contenu de la première section) -->
                 <div class="col-md-3 col-sm-12 text-center mb-3">
-                    <img src="images/adama.jpg" width="80px" alt="" class="img-fluid img-thumbnail">
+                    <img src="images/adama.jpg" width="80px" alt="" class="img-fluid img-thumbnail mt-3 ">
                 </div>
                 <p class="content">
                     En tant que développeur web Full-stack passionné, je cherche à contribuer activement au
@@ -114,7 +114,7 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
             </ul>
         </section>
 
-        <section id="projects" class="mb-5 p-3 border border-primary">
+        <section id="projects" class="mb-4 p-3 border border-primary">
             <h2><i class="fas fa-folder-minus"></i>Projets</h2>
 
             <div class="project card mb-3">
@@ -240,7 +240,7 @@ define('LINKEDIN_PROFILE', 'https://www.linkedin.com/in/adamaba97/');
             </form>
         </section>
         
-        <footer class="text-center mt-5 p-3">
+        <footer class="text-center mb-4 p-3">
             <div class="container">
                 <h3>Mes liens</h3>
                 <ul class="list-inline">
