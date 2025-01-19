@@ -22,3 +22,25 @@ const animationParams = {
 function triggerAnimation() {
   anime(animationParams);
 }
+
+const options = {
+  strings: [
+    "Développeur Full-Stack basé à Dakar.", 
+    "Concepteur web.",
+    "Formateur web 1.", 
+  ],
+  typeSpeed: 50,    // Vitesse d'écriture (ms par caractère)
+  backSpeed: 30,    // Vitesse de suppression
+  backDelay: 2000,  // Temps avant de réécrire
+  loop: true,        // Répéter l'animation
+  showCursor: false // Active le curseur de Typed.js
+};
+
+document.querySelector('.skills-marquee').addEventListener('mouseenter', function () {
+  this.style.animationPlayState = 'paused';
+});
+
+document.querySelector('.skills-marquee').addEventListener('mouseleave', function () {
+  this.style.animationPlayState = 'running';
+});
+

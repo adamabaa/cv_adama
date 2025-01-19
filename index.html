@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>CV de Adama BA</title>
-    <link rel="icon" type="image/png" href="./images/availability-svgrepo-com.svg">
+    <link rel="icon" type="image/webp" href="/assets/images/icone.webp">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
@@ -28,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/font-awesome@6.0.0-beta3/js/all.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js" defer></script>
     <script src="/assets/js/script.js" defer></script>
     <script src="/assets/js/sizeTxt.js" defer></script>
     <script src="/assets/js/gallery.js" defer></script>
@@ -44,7 +44,7 @@
         <!-- Navigation -->
         <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#home">Adama BA</a>
+                <h1 class="navbar-brand" href="#home">CV Adama BA</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,34 +53,35 @@
                     <ul class="menu navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
                         <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
                         <li class="nav-item"><a class="nav-link" href="#diplome">Diplômes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="d-flex justify-content-end">
-                <button id="toggleMode" class="btn btn-light" aria-label="Changer le mode">
-                    <i class="fas fa-adjust fs-4 text-dark"></i>
-                </button>
+            <div class="form-check form-switch d-flex justify-content-end">
+                <input class="form-check-input" type="checkbox" id="toggleMode" aria-label="Changer le mode">
+                <label class="form-check-label ms-2" for="toggleMode"></label>
             </div>
+            
         </nav>
 
         <!-- Home Section -->
-        <header id="home" class="vh-100 d-flex align-items-center justify-content-center text-center">
-            <div class="container">
-                <h1 class="display-3">Salut, je suis Adama BA</h1>
-                <p id="position" class="lead">Développeur Full-Stack basé à Dakar</p>
-                <a href="#contact" class="btn btn-outline-primary btn p-lg-3">Me Contacter</a>
-            </div>
-        </header>
+<header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 bg-light">
+    <div class="text-center">
+        <div class="display-4 mb-4">Salut, je suis Adama BA</div>
+        <div id="typed-text" class="fs-3 mb-4"></div>
+        <a href="#contact" class="btn btn-primary btn-lg shadow-sm hover-shadow">Me Contacter</a>
+    </div>
+</header>
+
 
         <!-- About Section -->
         <section id="about" class="p-5">
             <div class="container">
-                <h2 class="text-center">À propos</h2>
+                <h2 class="text-center"><i class="fas fa-home"></i>À propos</h2>
                 <div class="row">
                     <div class="col-lg-4">
                         <img src="/assets/images/adama.jpg" class="img-fluid " alt="Adama BA">
@@ -104,40 +105,9 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="bg-light mb-4 p-5 d-flex flex-column">
-            <h2><i class="fas fa-code m-auto"></i>Compétences techniques</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul id="competence" class="list-unstyled">
-                        <li><b>Front-end :</b>HTML, CSS, JavaScript, React, Angular</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul id="competence" class="list-unstyled">
-                        <li><b>Back-end :</b>JavaScript, Python, php</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul id="competence" class="list-unstyled">
-                        <li><b>Bases de données :</b>MySQL, MongoDB</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul id="competence" class="list-unstyled">
-                        <li><b>Outils de versionnement:</b>Git, GitHub</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul id="competence" class="list-unstyled">
-                        <li><b>Méthodologies de développement:</b>Agile</li>
-                    </ul>
-                </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="formation" class="bg-light mb-4 p-5 ">
-            <h2><i class="fas fa-school"></i>Formations</h2>
+        <!-- Formation Section -->
+        <section id="formation" class="mb-4 p-5 ">
+            <h2 class="text-center"><i class="fas fa-university"></i> Formations</h2>
             <ul id="formation" class="list-unstyled">
                 <li class="mb-3">
                     <b>ISEP DIAMNIADIO :</b> Développement Back-end
@@ -163,7 +133,61 @@
             </ul>
         </section>
 
-        <section id="diplome" class="bg-light mb-4 p-5 ">
+        <!-- Skills Section -->
+        <section id="skills" class="mb-4 p-5">
+            <div class="container">
+                <h2 class="text-center"><i class="fas fa-code"></i>Compétences techniques</h2>
+              <div class="skills-marquee-container">
+                <div class="skills-marquee">
+                  <!-- Original items -->
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <h5>HTML</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <h5>CSS</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <h5>JavaScript</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                    <h5>Bootstrap</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <h5>React</h5>
+                  </div>
+        
+                  <!-- Duplicate items -->
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <h5>HTML</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <h5>CSS</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <h5>JavaScript</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                    <h5>Bootstrap</h5>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <h5>React</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="diplome" class="mb-4 p-5 ">
             <h2><i class="fas fa-certificate"></i>Diplômes</h2>
             <div id="photoGallery" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -180,41 +204,41 @@
             </div>
         </section>
 
-<!-- Projects Section -->
-<section id="projects" class="bg-light mb-4 p-5 ">
-    <h2><i class="fas fa-folder-minus"></i>Projets</h2>
-    <div class="project card mb-3">
-        <div class="card-body">
-            <h3 class="card-title">Portfolio personnel</h3>
-            <p class="card-text">Création d'un portfolio personnel pour présenter mes compétences et projets.
-            </p>
-            <a href="https://portfolio-adama-ba.onrender.com/" class="btn btn-primary">Voir le projet</a>
-        </div>
-    </div>
+        <!-- Projects Section -->
+        <section id="projects" class="mb-4 p-5 ">
+            <h2 class="text-center"><i class="fas fa-folder-minus"></i>Projets</h2>
+            <div class="project card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Portfolio personnel</h3>
+                    <p class="card-text">Création d'un portfolio personnel pour présenter mes compétences et projets.
+                    </p>
+                    <a href="https://portfolio-adama-ba.onrender.com/" class="btn btn-primary">Voir le projet</a>
+                </div>
+            </div>
 
-    <div class="project card mb-3">
-        <div class="card-body">
-            <h3 class="card-title">Boutique en ligne</h3>
-            <p class="card-text">Développement d'une boutique en ligne avec des fonctionnalités de panier et de
-                paiement
-                en ligne.</p>
-            <a href="#" class="btn btn-primary">Voir le projet</a>
-        </div>
-    </div>
+            <div class="project card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Boutique en ligne</h3>
+                    <p class="card-text">Développement d'une boutique en ligne avec des fonctionnalités de panier et de
+                        paiement
+                        en ligne.</p>
+                    <a href="#" class="btn btn-primary">Voir le projet</a>
+                </div>
+            </div>
 
-    <div class="project card mb-3">
-        <div class="card-body">
-            <h3 class="card-title">Blog personnel</h3>
-            <p class="card-text">Mise en place d'un blog avec des fonctionnalités de publication et de gestion
-                des
-                commentaires.</p>
-            <a href="#" class="btn btn-primary">Voir le projet</a>
-        </div>
-    </div>
-</section>
+            <div class="project card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title">Blog personnel</h3>
+                    <p class="card-text">Mise en place d'un blog avec des fonctionnalités de publication et de gestion
+                        des
+                        commentaires.</p>
+                    <a href="#" class="btn btn-primary">Voir le projet</a>
+                </div>
+            </div>
+        </section>
 
         <section id="contact" class="mb-4 p-5 ">
-            <h2><i class="fas fa-envelope"></i>Contactez-moi</h2>
+            <h2 class="text-center"><i class="fas fa-envelope"></i>Contactez-moi</h2>
 
             <form id="contactForm" action="https://formspree.io/f/meqybqny" method="POST" enctype="multipart/form-data"
                 data-success="Merci pour votre message!" data-error="Une erreur s'est produite, veuillez réessayer."
@@ -278,7 +302,7 @@
                             aria-label="Profil LinkedIn"> LinkedIn</a>
                     </li>
                 </ul>
-                <p class="mt-3">&copy; Copyright Adama BA | 2024</p>
+                <p class="mt-3">&copy; Copyright Adama BA | 2025</p>
             </div>
 
             <div class="btn-group" id="txtSize" aria-label="Taille de texte">
