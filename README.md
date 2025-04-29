@@ -42,7 +42,7 @@ Si vous souhaitez contribuer à ce projet, vous pouvez ouvrir une demande de fus
 
 ## Auteur
 
-- [Adama BA](https://github.com/ada97568)
+- [Adama BA](https://github.com/adamabaa)
 
 
 # cv_adama
