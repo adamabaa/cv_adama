@@ -4,7 +4,7 @@
     /* Mode Clair  */
     --background-light: #F3E4C7;
     --text-primary-light: #8F4F07;
-    --text-secondary: #73BFF3;
+    --text-secondary: #0D6EFD;
     --accent-1: #E6EFF4;
     --accent-2: #7096D1;
     --accent-3: #C0C8CA;
@@ -143,8 +143,12 @@ nav, footer {
 }
 
 header {
-    background: url('/assets/images/header1.webp') center/cover no-repeat;
-    filter: grayscale(40%) brightness(1.2); 
+    background: linear-gradient(var(--background-light), transparent 75%),
+    url('/assets/images/header1.webp'), var(--background-dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     color: var(--text-primary-light);
     padding: 10px 20px;
     border-radius: 5px;
@@ -271,11 +275,6 @@ footer a:hover {
     color: var(--accent-2);
 }
 
-footer li {
-    color: #000000;
-    list-style: none;
-}
-
 /*CSS du loader*/
 .loader {
     position: fixed;
@@ -291,7 +290,7 @@ footer li {
     line-height: 150px;
     font-family: sans-serif;
     font-size: 8px;
-    color: var(--accent-1);
+    color: var(--accent-2);
     letter-spacing: 2px;
     text-transform: uppercase;
     text-shadow: 0 0 10px var(--accent-2);
